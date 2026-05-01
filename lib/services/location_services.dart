@@ -367,7 +367,7 @@ class LocationService {
       }
 
       // This could integrate with a local restaurant API
-      // For now, return some mock suggestions based on location
+    
       final suggestions = [
         'Local restaurants near you',
         'Popular dishes in your area',
@@ -385,7 +385,7 @@ class LocationService {
   // Check if user is in a specific region (for region-specific recipes)
   static bool isInRegion(Position position, String region) {
     // This is a simplified implementation
-    // In a real app, you'd have proper geofencing
+  
     switch (region.toLowerCase()) {
       case 'north':
         return position.latitude > 0;
