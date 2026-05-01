@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:permission_handler/permission_handler.dart';
+import 'package:permission_handler/permission_handler.dart' as ph;
 
 class ImageService {
   static final ImagePicker _imagePicker = ImagePicker();
@@ -40,14 +40,14 @@ class ImageService {
   static Future<Map<String, bool>> _requestCameraPermission(BuildContext context) async {
     if (kIsWeb) return {'granted': true, 'permanentlyDenied': false};
 
-    final status = await Permission.camera.status;
+    final status = await ph.Permission.camera.status;
     
     if (status.isGranted) {
       return {'granted': true, 'permanentlyDenied': false};
     }
 
     if (status.isDenied) {
-      final result = await Permission.camera.request();
+      final result = await ph.Permission.camera.request();
       
       if (result.isGranted) {
         return {'granted': true, 'permanentlyDenied': false};
@@ -115,13 +115,11 @@ class ImageService {
 
   /// Open app settings
   static Future<void> _openAppSettings() async {
-    // TODO: Implement proper app settings opening
-    // For now, this is a no-op as permission_handler API has changed
+    await ph.openAppSettings();
   }
 
   static Future<void> openAppSettings() async {
-    // TODO: Implement proper app settings opening
-    // For now, this is a no-op as permission_handler API has changed
+    await ph.openAppSettings();
   }
 
   static String getPermissionExplanation(String permission) {

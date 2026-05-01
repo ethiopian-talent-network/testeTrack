@@ -115,13 +115,14 @@ class RecipeCard extends StatelessWidget {
                         children: [
                           Text(
                             recipe.title,
+                            maxLines: 1, // This is the most important line
+                            overflow: TextOverflow.ellipsis, // This adds "..." if it's too long
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 14,
                               color: AppTheme.textPrimary,
                             ),
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
+                          
                           ),
                           const SizedBox(height: 4),
                           Row(
