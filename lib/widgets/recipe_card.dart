@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
-import '../models/recipe.dart';
-import '../screens/recipe_detail_screen.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/screens/recipe_detail_screen.dart';
 
 class RecipeCard extends StatelessWidget {
   final Recipe recipe;

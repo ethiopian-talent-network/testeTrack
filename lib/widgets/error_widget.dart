@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
-import '../utils/responsive_helper.dart';
-import 'feedback_dialog.dart';
-import 'loading_widget.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/utils/responsive_helper.dart';
+import 'package:testetrack/widgets/feedback_dialog.dart';
+import 'package:testetrack/widgets/loading_widget.dart';
 
 class ErrorWidget extends StatelessWidget {
   final String title;
@@ -273,7 +273,7 @@ class _RetryWidgetState extends State<RetryWidget> {
   int _retryCount = 0;
   bool _isLoading = false;
   Object? _lastError;
-[5/1/2026 12:54 AM] سيون زكارياس: Future<void> _retry() async {
+ Future<void> _retry() async {
     if (_retryCount >= widget.maxRetries) {
       FeedbackDialog.showError(
         context,

@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import '../core/app_theme.dart';
-import '../services/storage_service.dart';
-import '../services/image_service.dart';
-import '../providers/settings_provider.dart';
-import '../providers/theme_provider.dart';
-import '../widgets/app_header.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/services/storage_services.dart';
+import 'package:testetrack/services/image_services.dart';
+import 'package:testetrack/providers/settings_provider.dart';
+import 'package:testetrack/providers/theme_provider.dart';
+import 'package:testetrack/widgets/app_header.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

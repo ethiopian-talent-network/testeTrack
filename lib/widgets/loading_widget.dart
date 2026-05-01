@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
-import '../utils/responsive_helper.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/utils/responsive_helper.dart';
 
 class LoadingWidget extends StatelessWidget {
   final String? message;

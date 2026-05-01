@@ -1,11 +1,11 @@
-import '../models/recipe.dart';
+import 'package:testetrack/models/recipe.dart';
 
 
 var dummyRecipes = [
   Recipe(
     id: 'r1',
     title: 'Spaghetti Tomato',
-    imageUrl: sdsaddssadsa'https://images.unsplash.com/photo-1598103442097-8b74394b95c6',
+    imageUrl: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6',
     duration: '20 min',
     complexity: 'Simple',
     category: 'Dinner',

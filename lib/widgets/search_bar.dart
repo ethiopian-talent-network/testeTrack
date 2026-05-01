@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
+import 'package:testetrack/core/app_theme.dart';
 
 class RecipeSearchBar extends StatelessWidget {
   final Function(String) onChanged;

@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'dart:async';
-import '../core/app_theme.dart';
-import '../models/recipe.dart';
-import '../providers/recipe_provider.dart';
-import '../providers/theme_provider.dart';
-import '../widgets/recipe_card.dart';
-import '../widgets/search_bar.dart';
-import '../widgets/category_filter.dart';
-import '../widgets/loading_widget.dart';
-import '../widgets/error_widget.dart';
-import '../utils/responsive_helper.dart';
-import 'profile_screen.dart';
-import 'location_screen.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/providers/recipe_provider.dart';
+import 'package:testetrack/providers/theme_provider.dart';
+import 'package:testetrack/widgets/recipe_card.dart';
+import 'package:testetrack/widgets/search_bar.dart';
+import 'package:testetrack/widgets/category_filter.dart';
+import 'package:testetrack/widgets/loading_widget.dart';
+import 'package:testetrack/widgets/error_widget.dart';
+import 'package:testetrack/utils/responsive_helper.dart';
+import 'package:testetrack/screens/profile_screen.dart';
+import 'package:testetrack/screens/location_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});

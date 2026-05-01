@@ -1,11 +1,11 @@
-import '../models/recipe.dart';
-import '../services/storage_service.dart';
-import '../services/api_service.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/services/storage_services.dart';
+import 'package:testetrack/services/api_services.dart';
 
 
 class RecipeService {
   static List<Recipe> _recipes = [];
-  static List<Recipe> _localRecipes = []; // User-created recipes
+  static final List<Recipe> _localRecipes = []; // User-created recipes
   static List<Recipe>? _cachedFavorites;
   static bool _isLoading = false;
   static String? _error;

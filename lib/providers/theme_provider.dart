@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../core/app_theme.dart';
 
 /// The TasteTrack Dark Mode implementation is a showcase of advanced State Management (Topic 3) 
 /// and Data Persistence (Topic 4). Using a dedicated ThemeProvider, the app listens for the 

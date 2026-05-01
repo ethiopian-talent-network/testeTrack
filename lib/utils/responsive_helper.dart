@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
+import 'package:testetrack/core/app_theme.dart';
 
-class RecipeSearchBar extends StatelessWidget {
+class  ResponsiveSearchBar extends StatelessWidget {
   final Function(String) onChanged;
   final Function(String)? onSubmitted;
 
-  const RecipeSearchBar({
+  const  ResponsiveSearchBar({
     super.key,
     required this.onChanged,
     this.onSubmitted,
@@ -29,7 +29,6 @@ class RecipeSearchBar extends StatelessWidget {
     );
   }
 }
-import 'package:flutter/widgets.dart';
 
 class ResponsiveHelper {
   // Breakpoints

@@ -2,13 +2,13 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import '../core/app_theme.dart';
-import '../models/recipe.dart';
-import '../services/image_service.dart';
-import '../providers/recipe_provider.dart';
-import '../widgets/app_header.dart';
-import '../widgets/feedback_dialog.dart';
-import '../widgets/loading_widget.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/services/image_services.dart';
+import 'package:testetrack/providers/recipe_provider.dart';
+import 'package:testetrack/widgets/app_header.dart';
+import 'package:testetrack/widgets/feedback_dialog.dart';
+import 'package:testetrack/widgets/loading_widget.dart';
 
 class AddRecipeScreen extends StatefulWidget {
   const AddRecipeScreen({super.key});
@@ -380,7 +380,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
         child: Column(
           children: [
             DropdownButtonFormField<String>(
-              value: _selectedCategory,
+              initialValue: _selectedCategory,
               decoration: const InputDecoration(
                 labelText: 'Category',
                 border: OutlineInputBorder(),
@@ -399,7 +399,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
             ),
             const SizedBox(height: 16),
             DropdownButtonFormField<String>(
-              value: _selectedComplexity,
+              initialValue: _selectedComplexity,
               decoration: const InputDecoration(
                 labelText: 'Complexity',
                 border: OutlineInputBorder(),
@@ -478,7 +478,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                   ],
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),
@@ -542,7 +542,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                   ],
                 ),
               );
-            }).toList(),
+            }),
           ],
         ),
       ),

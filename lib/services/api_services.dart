@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import '../models/recipe.dart';
+import 'package:testetrack/models/recipe.dart';
 
 class ApiService {
   static const String _baseUrl = 'https://api.spoonacular.com';

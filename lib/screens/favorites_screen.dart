@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
-import '../data/recipe_service.dart';
-import '../models/recipe.dart';
-import '../widgets/recipe_card.dart';
-import '../widgets/app_header.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/data/recipe_service.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/widgets/recipe_card.dart';
+import 'package:testetrack/widgets/app_header.dart';
 
 class FavoritesScreen extends StatefulWidget {
   const FavoritesScreen({super.key});

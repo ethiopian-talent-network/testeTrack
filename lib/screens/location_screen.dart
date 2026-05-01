@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../core/app_theme.dart';
-import '../services/location_service.dart';
-import '../widgets/app_header.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/services/location_services.dart';
+import 'package:testetrack/widgets/app_header.dart';
 
 class LocationScreen extends StatefulWidget {
   const LocationScreen({super.key});

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../screens/dashboard_screen.dart';
-import '../screens/favorites_screen.dart';
-import 'screens/profile_screen.dart';
-import '../screens/add_recipe_screen.dart';
-import '../screens/recipe_detail_screen.dart';
-import '../screens/location_screen.dart';
-import '../widgets/app_navigation.dart';
+import 'package:testetrack/screens/dashboard_screen.dart';
+import 'package:testetrack/screens/favorites_screen.dart';
+import 'package:testetrack/screens/profile_screen.dart';
+import 'package:testetrack/screens/add_recipe_screen.dart';
+import 'package:testetrack/screens/recipe_detail_screen.dart';
+import 'package:testetrack/screens/location_screen.dart';
+import 'package:testetrack/widgets/app_navigation.dart';
  
 class MainLayout extends StatefulWidget {
   const MainLayout({super.key});

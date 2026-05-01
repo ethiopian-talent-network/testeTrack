@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
-import '../models/recipe.dart';
-import '../data/recipe_service.dart';
-import '../services/storage_service.dart';
+import 'package:testetrack/models/recipe.dart';
+import 'package:testetrack/data/recipe_service.dart';
+import 'package:testetrack/services/storage_services.dart';
 
 class RecipeProvider extends ChangeNotifier {
   List<Recipe> _recipes = [];
@@ -125,7 +125,7 @@ class RecipeProvider extends ChangeNotifier {
     notifyListeners();
     
     // Add to search history asynchronously (don't block the search)
-    if (_searchQuery.isNotEmpty && _searchQuery.length >= 1) {
+    if (_searchQuery.isNotEmpty && _searchQuery.isNotEmpty) {
       StorageService.addToSearchHistory(_searchQuery).catchError((e) {
         // Ignore errors from search history
       });
@@ -137,9 +137,9 @@ class RecipeProvider extends ChangeNotifier {
     double score = 0;
     
     // Title exact match
-    if (recipe.title.toLowerCase() == query) score += 100;
-    // Title starts with query
-    else if (recipe.title.toLowerCase().startsWith(query)) score += 80;
+    if (recipe.title.toLowerCase() == query) {
+      score += 100;
+    } else if (recipe.title.toLowerCase().startsWith(query)) score += 80;
     // Title contains query
     else if (recipe.title.toLowerCase().contains(query)) score += 60;
     

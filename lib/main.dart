@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'core/app_theme.dart';
-import 'main_layout.dart';
-import 'providers/recipe_provider.dart';
-import 'providers/settings_provider.dart';
-import 'providers/theme_provider.dart';
+import 'package:testetrack/providers/recipe_provider.dart';
+import 'package:testetrack/providers/settings_provider.dart';
+import 'package:testetrack/providers/theme_provider.dart';
+import 'package:testetrack/core/app_theme.dart';
+import 'package:testetrack/main_layout.dart';
  
 void main() => runApp(TasteTrackApp());
  
